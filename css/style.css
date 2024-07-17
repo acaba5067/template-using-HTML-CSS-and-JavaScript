@@ -70,7 +70,6 @@ body{
 }
 .header-area .links li{
          display: inline-block;
-         margin-left: 10px;
          padding:20px ;
 }
 .landing-page .introduction-text{
@@ -79,8 +78,9 @@ body{
          top:50%;
          transform: translate(-50%,-50%);
          text-align: center;
-         background-color: #fff;
+         background-color: #ffffffbc;
          z-index: 3;
+         max-width: 100%;
 }
 .landing-page .introduction-text h1{
          font-size: 60px;
