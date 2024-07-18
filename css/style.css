@@ -15,7 +15,7 @@ body{
 {
          .container{
                   width:750px;
-                  margin-left: 50px;
+                  margin-left: 40px;
          }
 }
 /* meduim */
@@ -127,7 +127,7 @@ body{
          text-align: center;
          /* background-color: #ffffffbc; */
          z-index: 2;
-         width: 900px;
+         width:700px;
 }
 .landing-page .introduction-text h1{
          font-size: 60px;
@@ -137,7 +137,7 @@ body{
          color:var(--main-color)
 } 
 .landing-page .introduction-text p{
-         letter-spacing: 5;
+         letter-spacing:2;
          line-height: 1.6;
          margin-top: 10px;
          font-size: 30px;
