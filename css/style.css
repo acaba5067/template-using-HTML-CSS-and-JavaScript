@@ -14,8 +14,8 @@ body{
 @media(max-width:768px)
 {
          .container{
-                  width:740px;
-                  margin: auto;
+                  width:750px;
+                  margin-left: 50px;
          }
 }
 /* meduim */
