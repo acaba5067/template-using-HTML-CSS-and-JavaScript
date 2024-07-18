@@ -36,7 +36,7 @@ body{
 .setting-box
 {
   position: fixed;
-  left: 0;
+  left: -200px;
   top:0;
   background-color: rgba(255, 255, 255, 0.664);
   width: 200px;
@@ -67,7 +67,7 @@ body{
 /* start landing pafe */
 .landing-page{
          min-height: 100vh;
-         background-image: url(../images/3.webp);
+         background-image: url(../images/course-1.jpg);
          background-size: cover;
          position: relative;
 }

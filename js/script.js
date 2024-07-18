@@ -2,7 +2,7 @@
 let landingpage=document.querySelector(".landing-page")
 
 //
-let imgsArray=["1.jfif","2.jpg","3.webp"]
+let imgsArray=["1.jfif","2.jpg","3.webp","course-1.jpg"]
 
 setInterval(()=>{
          //get random mumber
