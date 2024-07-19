@@ -171,6 +171,12 @@ body{
          transition: 0.3s;
          
 }
+.header-area .links li a.active{
+   color: var(--main-color);
+   text-decoration: none;
+   transition: 0.3s;
+   
+}
 .header-area .links li a:hover ,.header-area .links li a:active
 {
    color:var(--main-color);

@@ -1,7 +1,17 @@
-//toggle spin class on icon
+//check if there is local storage color option
+let maincolors=localStorage.getItem("color_option")
+if(maincolors !==null){
+         // console.log('local storage is not empty you can set it on root now')
+         // console.log(localStorage.getItem("color_option"))
+         document.documentElement.style.setProperty('--main-color',localStorage.getItem("color_option"))
+
+}
+
+    //click on toggle settings gear
 document.querySelector(".toggle-setting .fas").onclick=function(){
          //toggle class fa-spin for rotation in-self
          this.classList.toggle("fa-spin")
+         //toggle class open on main settings box
          document.querySelector(".setting-box").classList.toggle("open")
 }
 
@@ -16,6 +26,17 @@ colorsli.forEach(li =>{
          li.addEventListener("click",(e)=>{
                   //set color on root
                   document.documentElement.style.setProperty('--main-color',e.target.dataset.color)
+
+                  //set color on local storage 
+                  localStorage.setItem("color_option",e.target.dataset.color)
+
+
+                  //REmove active class from All childern
+                  e.target.parentElement.querySelectorAll(".active").forEach(element=>{
+                           element.classList.remove("active")
+                  })
+              //add active class on self 
+              e.target.classList.add("active");
          })
 })
 
