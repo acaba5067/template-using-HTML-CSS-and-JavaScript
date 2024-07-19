@@ -44,19 +44,22 @@ body{
   min-height: 100vh;
   transition: 0.3s;
 }
-.setting-box .open{
+.open{
    left:0;
 }
-.setting-box .b-gear
+.setting-box .toggle-setting
 {
     position: absolute;
     right: -30px;
     top:100px;
     background-color: #fff;
-    padding: 8px 0;
-    width: 30px;
     text-align: center;
    cursor: pointer;
+}
+.setting-box .toggle-setting .fas  
+{
+  width: 30px;
+  padding: 8px 0;
 }
 .setting-box .setting-content
 {

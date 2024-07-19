@@ -1,3 +1,13 @@
+//toggle spin class on icon
+document.querySelector(".toggle-setting .fas").onclick=function(){
+         //toggle class fa-spin for rotation in-self
+         this.classList.toggle("fa-spin")
+         document.querySelector(".setting-box").classList.toggle("open")
+}
+
+
+
+
 //select landing page element
 let landingpage=document.querySelector(".landing-page")
 
