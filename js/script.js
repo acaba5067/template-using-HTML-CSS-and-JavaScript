@@ -6,6 +6,24 @@ document.querySelector(".toggle-setting .fas").onclick=function(){
 }
 
 
+//switch colors
+
+const colorsli=document.querySelectorAll(".colors-list li");
+//loop on All list items
+
+colorsli.forEach(li =>{
+         //click on every list items
+         li.addEventListener("click",(e)=>{
+                  //set color on root
+                  document.documentElement.style.setProperty('--main-color',e.target.dataset.color)
+         })
+})
+
+
+
+
+
+
 
 
 //select landing page element
@@ -17,7 +35,7 @@ let imgsArray=["1.jfif","2.jpg","3.webp","course-1.jpg"]
 setInterval(()=>{
          //get random mumber
          let randomNumber=Math.floor(Math.random()*imgsArray.length)
-         console.log(randomNumber)
+         //console.log(randomNumber)
 
         //change Background Image Url
          landingpage.style.backgroundImage='url("images/'  +imgsArray[randomNumber]  + '")'

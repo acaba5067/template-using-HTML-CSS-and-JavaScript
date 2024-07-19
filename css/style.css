@@ -38,7 +38,7 @@ body{
   position: fixed;
   left: -200px;
   top:0;
-  background-color: rgba(255, 255, 255, 0.664);
+  background-color: rgb(255, 255, 255);
   width: 200px;
   z-index: 1000;
   min-height: 100vh;
@@ -61,9 +61,65 @@ body{
   width: 30px;
   padding: 8px 0;
 }
-.setting-box .setting-content
+.setting-box  .option-box
 {
    
+   padding: 20px;
+}
+.setting-box  .option-box h4
+{
+   margin: 0;
+   color:#666;
+   
+
+}
+.setting-box  .option-box .colors-list
+{
+   list-style: none;
+   text-align: center;
+   padding: 0;
+
+}
+.setting-box  .option-box .colors-list li
+{
+   
+   width: 20px;
+   height: 20px;
+   background-color: black;
+   border-radius: 50%;
+   cursor: pointer;
+   opacity: 0.5;
+   display: inline-block;
+}
+.setting-box  .option-box .colors-list li.active
+{
+   opacity: 1;
+}
+.setting-box  .option-box .colors-list li:first-child
+{
+   background-color:#FF9800;;
+
+}
+.setting-box  .option-box .colors-list li:nth-child(2)
+{
+   background-color: #E91E63;
+
+}
+.setting-box  .option-box .colors-list li:nth-child(3)
+{
+   background-color: #009688;
+
+}
+
+.setting-box  .option-box .colors-list li:nth-child(4)
+{
+   background-color: #03A9F4;
+
+}
+
+.setting-box  .option-box .colors-list li:nth-child(5)
+{
+   background-color:#4CAF50;
 
 }
 /* End setting box */
