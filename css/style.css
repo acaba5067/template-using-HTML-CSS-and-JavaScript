@@ -73,6 +73,7 @@ body{
 {
    margin: 0;
    color:#666;
+   font-size: 14px;
    
 
 }
@@ -124,6 +125,35 @@ body{
 .setting-box  .option-box .colors-list li:nth-child(5)
 {
    background-color:#4CAF50;
+
+}
+.setting-box  .random-backgrounds .yes,.setting-box  .random-backgrounds .no
+{
+   width: 50px;
+   background-color: #009688;;
+   color:#fff;
+   margin-top: 10px;
+   display: inline-block;
+   font-size: 12px;
+   padding: 3px 10px;
+   font-weight: bold;
+   border-radius: 4px;
+   opacity: 0.5;
+   cursor: pointer;
+}
+.setting-box   .random-backgrounds span.active{
+   opacity: 1;
+}
+.setting-box .random-backgrounds .yes
+{
+ background-color: #009688;
+
+}
+.setting-box  .random-backgrounds .no
+{ 
+
+}
+.setting-box  .option-box .active{
 
 }
 /* End setting box */

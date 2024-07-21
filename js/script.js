@@ -52,7 +52,25 @@ colorsli.forEach(li =>{
          })
 })
 
+//switch background option 
+const randomBackEl=document.querySelectorAll(".random-backgrounds span");
 
+//loop on All Span
+
+randomBackEl.forEach(span =>{
+         //click on every span
+         span.addEventListener("click",(e)=>{
+                 
+
+                  
+                  //REmove active class from All span
+                  e.target.parentElement.querySelectorAll(".active").forEach(element=>{
+                           element.classList.remove("active")
+                  })
+              //add active class on self 
+              e.target.classList.add("active");
+         })
+})
 
 
 
