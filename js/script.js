@@ -3,7 +3,19 @@ let maincolors=localStorage.getItem("color_option")
 if(maincolors !==null){
          // console.log('local storage is not empty you can set it on root now')
          // console.log(localStorage.getItem("color_option"))
-         document.documentElement.style.setProperty('--main-color',localStorage.getItem("color_option"))
+         document.documentElement.style.setProperty('--main-color',maincolors)
+
+             //Remove active class from All colors list item
+             document.querySelectorAll(".colors-list li").forEach(element=>{
+                element.classList.remove("active")
+                 //Add Active Class on Element with Data-color ===Local Storage item
+                 if(element.dataset.color===maincolors){
+                    //Add Active Class
+                    element.classList.add("active")
+                 }
+            })
+
+               
 
 }
 

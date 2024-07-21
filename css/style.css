@@ -63,8 +63,11 @@ body{
 }
 .setting-box  .option-box
 {
-   
-   padding: 20px;
+   padding: 10px;
+   text-align: center;
+   background-color: #EEE;
+   margin: 20px;
+  
 }
 .setting-box  .option-box h4
 {
@@ -78,22 +81,23 @@ body{
    list-style: none;
    text-align: center;
    padding: 0;
+   margin: 10px 0 0;
 
 }
 .setting-box  .option-box .colors-list li
 {
    
-   width: 20px;
-   height: 20px;
+   width: 24px;
+   height: 24px;
    background-color: black;
    border-radius: 50%;
    cursor: pointer;
-   opacity: 0.5;
    display: inline-block;
+   border:3px solid #EEE;
 }
 .setting-box  .option-box .colors-list li.active
 {
-   opacity: 1;
+  border-color: #fff;
 }
 .setting-box  .option-box .colors-list li:first-child
 {
