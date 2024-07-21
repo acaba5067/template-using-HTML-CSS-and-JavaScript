@@ -19,6 +19,11 @@ if(maincolors !==null){
 
 }
 
+// Random Background option 
+let backgroundOption=true;
+
+// variable to control the  Background interval
+let backgroundInterval
     //click on toggle settings gear
 document.querySelector(".toggle-setting .fas").onclick=function(){
          //toggle class fa-spin for rotation in-self
@@ -69,6 +74,19 @@ randomBackEl.forEach(span =>{
                   })
               //add active class on self 
               e.target.classList.add("active");
+              if(e.target.dataset.background === 'yes')
+                {
+                    backgroundOption=true
+                    randomizeImgs()
+                    
+
+              }
+
+              else{
+                backgroundOption=false
+
+                clearInterval(backgroundInterval)
+                }
          })
 })
 
@@ -80,15 +98,24 @@ randomBackEl.forEach(span =>{
 //select landing page element
 let landingpage=document.querySelector(".landing-page")
 
-//
+// Get Array of IMgs
 let imgsArray=["1.jfif","2.jpg","3.webp","course-1.jpg"]
 
-setInterval(()=>{
-         //get random mumber
-         let randomNumber=Math.floor(Math.random()*imgsArray.length)
-         //console.log(randomNumber)
+//function to randomize imgs
+function randomizeImgs(){
+   if(backgroundOption===true)
+   {
+    backgroundInterval=setInterval(()=>{
+        //get random mumber
+        let randomNumber=Math.floor(Math.random()*imgsArray.length)
+        //console.log(randomNumber)
 
-        //change Background Image Url
-         landingpage.style.backgroundImage='url("images/'  +imgsArray[randomNumber]  + '")'
-    
+       //change Background Image Url
+        landingpage.style.backgroundImage='url("images/'  +imgsArray[randomNumber]  + '")'
+   
 },1000)
+   }
+
+}
+
+
