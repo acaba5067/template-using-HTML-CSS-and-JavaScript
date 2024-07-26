@@ -24,6 +24,35 @@ let backgroundOption=true;
 
 // variable to control the  Background interval
 let backgroundInterval
+
+//Check if There is alocal storage Random Background Item
+let backgroundLocateItem=localStorage.getItem("background_option")
+
+//check if Random Background Local Storage is Not Empty
+if(backgroundLocateItem !==null){
+    if(backgroundLocateItem === "true")
+    {
+        backgroundOption=true
+    }
+    else{
+        backgroundOption=false
+    }
+    console.log(backgroundLocateItem)
+
+    //Remove Active class from all spans
+    document.querySelectorAll(".random-backgrounds span").forEach(element=>{
+        element.classList.remove("active")
+    })
+    if(backgroundLocateItem==="true"){
+        document.querySelector(".random-backgrounds .yes").classList.add("active")
+
+    }
+    else{
+        document.querySelector(".random-backgrounds .no").classList.add("active")
+    }
+
+}
+
     //click on toggle settings gear
 document.querySelector(".toggle-setting .fas").onclick=function(){
          //toggle class fa-spin for rotation in-self
@@ -78,6 +107,7 @@ randomBackEl.forEach(span =>{
                 {
                     backgroundOption=true
                     randomizeImgs()
+                    localStorage.setItem("background_option",true)
                     
 
               }
@@ -86,6 +116,7 @@ randomBackEl.forEach(span =>{
                 backgroundOption=false
 
                 clearInterval(backgroundInterval)
+                localStorage.setItem("background_option",false)
                 }
          })
 })
