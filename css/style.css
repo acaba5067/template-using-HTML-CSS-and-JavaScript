@@ -275,3 +275,51 @@ body{
    
 }
 /* End About us */
+
+/* Start skills */
+.skills{
+   padding-top: 50px;
+   padding-bottom: 50px;
+   background-color: #EEE;
+   margin-left:7px;
+}
+.skills h2
+{
+   font-weight: bold;
+   font-size: 30px;
+   color: var(--main-color);
+   margin: 0 0 50px;
+   text-align: center;
+}
+.skills .skill-box{
+   background-color: #FFF;
+   display: flex;
+   width: 95%;
+   margin: auto;
+   padding: 20px;
+   margin-bottom: 15px;
+}
+.skills .skill-box  .skill-name{
+  font-weight: bold;
+  width:140px;
+  text-align: center;
+  line-height: 30px;
+   
+}
+.skills .skill-box  .skill-progress{
+   height: 30px;
+   width: 100%;
+   background-color: #00000028;
+   border-radius: 6px;
+   position: relative;
+   overflow: hidden;
+}
+.skill-progress span{
+   position: absolute;
+   left: 0;
+   top:0;
+   width: 50%;
+   height: 100%;
+   background-color: var(--main-color);
+}
+/* End Skills */
