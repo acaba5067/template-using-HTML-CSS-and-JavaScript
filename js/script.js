@@ -179,3 +179,32 @@ window.onscroll=function(){
     this.console.log(skillsOUterHeight)
 }
 
+
+
+//create popup with the image
+let OurGallery=document.querySelectorAll(".gallery img");
+OurGallery.forEach(img=>{
+    img.addEventListener("click",(e)=>{
+        //create overlay element
+        let overlay=document.createElement("div")
+        //add class to overlay
+        overlay.className="popup-overlay"
+        // append overlay to the body
+        document.body.appendChild(overlay)
+
+        //create popup Box
+        let popupBox=document.createElement("div");
+        //add class to the popup Box
+        popupBox.className='popup-box'
+        //create the image
+        let popupImage=document.createElement("img")
+        //set image source
+        popupImage.src=img.src
+
+        //Add Image to popup Box
+        popupBox.appendChild(popupImage)
+        //append the popup box to body
+        document.body.appendChild(popupBox)
+
+    })
+})
