@@ -150,3 +150,32 @@ function randomizeImgs(){
 }
 
 
+//select Skills Selector
+
+let OurSkills=document.querySelector(".skills")
+window.onscroll=function(){
+    //skills offset top
+    let skillsOffsetTop=OurSkills.offsetTop;
+
+    //skills outer height
+    let skillsOUterHeight=OurSkills.offsetHeight
+
+
+    //window height
+
+    let windowHeight=this.innerHeight
+
+    //window scrolltop
+    let windowScrollTop=this.pageYOffset
+
+    if(windowScrollTop>(skillsOffsetTop>(skillsOffsetTop+skillsOUterHeight-windowHeight))){
+        let allskills=document.querySelectorAll(".skill-box .skill-progress span")
+        allskills.forEach(skill=>{
+            skill.style.width=skill.dataset.progress
+        })
+
+    }
+
+    this.console.log(skillsOUterHeight)
+}
+
