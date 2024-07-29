@@ -587,6 +587,9 @@ body{
    flex-direction: column;
   
 }
+.testmoinals-content .ts-box{
+   margin: auto;
+}
  
 }
 .testmoinals::before
