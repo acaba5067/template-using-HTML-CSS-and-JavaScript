@@ -588,7 +588,7 @@ body{
   
 }
 .testmoinals .testmoinals-content{
-   margin: auto;
+   margin-left: 300px;
 }
 .testmoinals .testmoinals-content .ts-box{
    margin-top: 5px;
