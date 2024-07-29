@@ -579,6 +579,16 @@ body{
 
   
 }
+@media(max-width:768px)
+{
+.testmoinals
+{
+   display: flex;
+   flex-direction: column;
+  
+}
+ 
+}
 .testmoinals::before
 {
   content: '';
