@@ -448,14 +448,14 @@ body{
    left: 20px;
 }
 .timeline .timeline-content .left::before{
-   right: -45px;
+   right: -65px;
 }
 .timeline .timeline-content .right{
    float: right;
    right: 20px;
 }
 .timeline .timeline-content .right::before{
-   left: -45px; 
+   left: -65px; 
 }
 .timeline .timeline-content .right::before,.timeline .timeline-content .left::before{
    content: "";
@@ -525,7 +525,7 @@ body{
    .features{
       display: flex;
       flex-direction: column;
-      margin: auto;
+      margin-left: 500px;
    }
 }
 .features-head {
