@@ -448,14 +448,14 @@ body{
    left: 20px;
 }
 .timeline .timeline-content .left::before{
-   right: -40px;
+   right: -30px;
 }
 .timeline .timeline-content .right{
    float: right;
    right: 20px;
 }
 .timeline .timeline-content .right::before{
-   left: -40px; 
+   left: -30px; 
 }
 .timeline .timeline-content .right::before,.timeline .timeline-content .left::before{
    content: "";
