@@ -587,8 +587,10 @@ body{
    flex-direction: column;
   
 }
-.testmoinals .testmoinals-content .ts-box{
+.testmoinals .testmoinals-content{
    margin: auto;
+}
+.testmoinals .testmoinals-content .ts-box{
    margin-top: 5px;
 }
  
