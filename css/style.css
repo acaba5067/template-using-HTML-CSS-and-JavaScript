@@ -157,6 +157,47 @@ body{
 
 }
 /* End setting box */
+/* start Nav Bullet */
+.nav-bullets{
+      position: fixed;
+      right: 0;
+      top:50%;
+      transform: translateY(-50%);
+      width: 40px;
+      z-index: 2000;
+}
+.nav-bullets .bullet{
+   width: 20px;
+   height: 20px;
+   border: 3px solid var(--main-color);
+   margin: 10px auto;
+   border-radius: 50%;
+   cursor: pointer;
+   position: relative;
+}
+.nav-bullets .bullet .tooltip{
+   background-color: var(--main-color);
+   width: 120px;
+   color:#FFF;
+   padding: 4px 10px;
+   position: absolute;
+   right: 40px;
+   top: -6px;
+
+}
+.nav-bullets .bullet .tooltip::after{
+   content: "";
+   border-style:solid ;
+   border-width: 10px;
+   border-color: transparent   transparent  transparent #FFF;
+   height: 0;
+   width: 0;
+   position: absolute;
+   right: -10px;
+   top:7px
+
+}
+/* ENd Nav BUllet */
 /* start landing pafe */
 .landing-page{
          min-height: 100vh;
