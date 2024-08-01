@@ -241,13 +241,20 @@ document.addEventListener("click",function(e){
      }
 });
 
-//select all bullets
+//select all links
+
 const allBullets=document.querySelectorAll(".nav-bullets .bullet")
-allBullets.forEach(bullet=>{
-    bullet.addEventListener("click",(e)=>{
-        document.querySelector(e.target.dataset.section).scrollIntoView({
-            behavior:'smooth'
+const alllinks=document.querySelectorAll(".links a")
+function scrollTOsomewhere(elements){
+
+    elements.forEach(ele=>{
+        ele.addEventListener("click",(e)=>{
+            e.preventDefault
+            document.querySelector(e.target.dataset.section).scrollIntoView({
+                behavior:'smooth'
+            })
         })
     })
-})
-
+}
+scrollTOsomewhere(allBullets)
+scrollTOsomewhere(alllinks)
