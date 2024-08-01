@@ -27,30 +27,23 @@ let backgroundInterval
 
 //Check if There is alocal storage Random Background Item
 let backgroundLocateItem=localStorage.getItem("background_option")
+ //Remove Active class from all spans
+ document.querySelectorAll(".random-backgrounds span").forEach(element=>{
+    element.classList.remove("active")
+})
 
 //check if Random Background Local Storage is Not Empty
 if(backgroundLocateItem !==null){
     if(backgroundLocateItem === "true")
     {
         backgroundOption=true
+        document.querySelector(".random-backgrounds .yes").classList.add("active")
     }
     else{
         backgroundOption=false
-    }
-    console.log(backgroundLocateItem)
-
-    //Remove Active class from all spans
-    document.querySelectorAll(".random-backgrounds span").forEach(element=>{
-        element.classList.remove("active")
-    })
-    if(backgroundLocateItem==="true"){
-        document.querySelector(".random-backgrounds .yes").classList.add("active")
-
-    }
-    else{
         document.querySelector(".random-backgrounds .no").classList.add("active")
     }
-
+    console.log(backgroundLocateItem)
 }
 
     //click on toggle settings gear
@@ -75,14 +68,7 @@ colorsli.forEach(li =>{
 
                   //set color on local storage 
                   localStorage.setItem("color_option",e.target.dataset.color)
-
-
-                  //REmove active class from All childern
-                  e.target.parentElement.querySelectorAll(".active").forEach(element=>{
-                           element.classList.remove("active")
-                  })
-              //add active class on self 
-              e.target.classList.add("active");
+                 handleactive(e);
          })
 })
 
@@ -94,13 +80,8 @@ const randomBackEl=document.querySelectorAll(".random-backgrounds span");
 randomBackEl.forEach(span =>{
          //click on every span
          span.addEventListener("click",(e)=>{
-                 
-
-                  
-                  //REmove active class from All span
-                  e.target.parentElement.querySelectorAll(".active").forEach(element=>{
-                           element.classList.remove("active")
-                  })
+                     
+            handleactive(e);
               //add active class on self 
               e.target.classList.add("active");
               if(e.target.dataset.background === 'yes')
@@ -258,3 +239,49 @@ function scrollTOsomewhere(elements){
 }
 scrollTOsomewhere(allBullets)
 scrollTOsomewhere(alllinks)
+
+// Handle Active State
+function handleactive(ev)
+{
+    //Remove Active Class From All childern
+    ev.target.parentElement.querySelectorAll(".active").forEach(element=>{
+        element.classList.remove("active")
+})
+//add active class on self 
+ev.target.classList.add("active");
+
+}
+
+
+let bulletSpan=document.querySelectorAll(".bullets-option span")
+let bulletsContainer=document.querySelector(".nav-bullets")
+let bulletLocalItem=localStorage.getItem("bullets_option")
+if(bulletLocalItem !==null)
+{
+    bulletSpan.forEach(span=>{
+        span.classList.remove("active")
+    })    
+    if(bulletLocalItem==='block'){
+        bulletsContainer.style.display='block'
+        document.querySelector(".bullets-option .yes").classList.add("active")
+    }
+    else{
+        bulletsContainer.style.display='none'
+        document.querySelector(".bullets-option .no").classList.add("active")
+    }
+}
+bulletSpan.forEach(span=>{
+    span.addEventListener("click",(e)=>{
+        if(span.dataset.display==='show')
+        {
+            bulletsContainer.style.display='block'
+            localStorage.setItem("bullets_option",'block')
+
+        }
+        else{
+             bulletsContainer.style.display='none'
+             localStorage.setItem("bullets_option",'none')
+        }
+        handleactive(e)
+    })
+})
