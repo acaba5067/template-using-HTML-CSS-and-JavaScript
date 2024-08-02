@@ -151,6 +151,19 @@ body{
  background-color: var(--main-color);
 
 }
+.setting-box .setting-container .reset-option{
+   background-color: blue;
+   border:none;
+   width: 178px;
+   margin: 10px auto;
+   display: block;
+   color:#FFF;
+   font-weight: bold;
+   padding: 10px;
+   border-radius: 4px;
+   cursor: pointer;
+
+}
 .setting-box  .random-backgrounds .no
 { 
 
@@ -230,6 +243,7 @@ display: block;
          color:#fff;
          display: flex;
          padding: 10px;
+         margin-right: 120px;
          
 }
 .header-area .log{
