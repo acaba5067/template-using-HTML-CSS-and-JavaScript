@@ -252,7 +252,7 @@ display: block;
 }
 .header-area .links{
         position: absolute;
-        right: px;
+        right: 7px;
          list-style: none;
          width: 80%;
          font-size: 15px;
