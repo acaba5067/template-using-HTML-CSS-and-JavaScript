@@ -251,8 +251,8 @@ display: block;
          padding: 15px;
 }
 .header-area .links{
-  
-
+        position: absolute;
+        right: 2px;
          list-style: none;
          width: 80%;
          font-size: 15px;
