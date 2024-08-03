@@ -238,8 +238,7 @@ display: block;
          z-index: 1;
 }
 .landing-page .header-area{
-   width: 100%;
-   left: 5px;
+        width: 100%;
          position: relative;
          z-index: 2;
          color:#fff;
@@ -253,6 +252,7 @@ display: block;
          padding: 15px;
 }
 .header-area .links{
+   margin-left: 10px;
          list-style: none;
          /* padding-left: 20px; */
         /* margin-right: 200px; */
