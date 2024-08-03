@@ -248,11 +248,11 @@ display: block;
 }
 .header-area .log{
          width: 300px;
-         padding: 15px;
+         padding: 5px;
 }
 .header-area .links{
         position: absolute;
-        right: 5px;
+        right: 9px;
          list-style: none;
          width: 80%;
          font-size: 15px;
