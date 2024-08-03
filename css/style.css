@@ -299,6 +299,11 @@ display: block;
    .header-area .links{
       display: none;
    }
+   .header-area .toggle-menu :hover .header-area .links{
+      display: flex;
+      flex-direction:column ;
+      flex-wrap: wrap;
+   }
 }
 .header-area .toggle-menu span{
      display: block;
