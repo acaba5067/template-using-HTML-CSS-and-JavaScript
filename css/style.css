@@ -297,10 +297,10 @@ display: block;
       margin-left: 500px;
    }
    .header-area .links{
-      opacity: 0;
+    display: none;
    }
    .header-area .toggle-menu:hover .header-area .link{
-      opacity: 1;
+      display: block;
       display: flex;
       flex-direction:column ;
       position: absolute;
