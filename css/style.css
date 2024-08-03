@@ -299,12 +299,12 @@ display: block;
    .header-area .links{
       display: none;
    }
-   .header-area .toggle-menu :hover .header-area .link{
+   .header-area .toggle-menu:hover .header-area .link{
       display: flex;
       flex-direction:column ;
       position: absolute;
-      top:100%;
-      left: 0;
+    justify-content: flex-start;
+    align-items: flex-end;
       width: 100%;
       background-color: rgba(0,0,0,0.7);
 
@@ -314,6 +314,7 @@ display: block;
      display: block;
      background-color: #FFF;
      height: 4px;
+     padding: 3px;
      margin-bottom: 3px;
 
 }
