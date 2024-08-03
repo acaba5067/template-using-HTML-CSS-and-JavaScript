@@ -294,6 +294,7 @@ display: block;
 @media(max-width:768px){
    .header-area .toggle-menu{
       display: inline-block;
+      text-align: right;
    }
    .header-area .links{
       display: none;
