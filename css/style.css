@@ -244,6 +244,7 @@ display: block;
          color:#fff;
          display: flex;
          padding: 10px;
+         margin-left: 300px;
          /* margin-right: 80px; */
          
 }
@@ -258,9 +259,8 @@ display: block;
          /* padding-left: 20px;  */
         /* margin-right: 200px; */
          width: 80%;
-         text-align: center;
          font-size: 15px;
-        
+       
 }
 .header-area .links li{
          display: inline-block;
