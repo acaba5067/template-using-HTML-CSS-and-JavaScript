@@ -244,8 +244,6 @@ display: block;
          color:#fff;
          display: flex;
          padding: 10px;
-         margin-left: 300px;
-         /* margin-right: 80px; */
          
 }
 .header-area .log{
@@ -256,8 +254,6 @@ display: block;
   
 
          list-style: none;
-         /* padding-left: 20px;  */
-        /* margin-right: 200px; */
          width: 80%;
          font-size: 15px;
        
