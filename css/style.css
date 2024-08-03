@@ -243,7 +243,7 @@ display: block;
          color:#fff;
          display: flex;
          padding: 10px;
-         margin-right: 80px;
+         /* margin-right: 80px; */
          
 }
 .header-area .log{
@@ -251,13 +251,14 @@ display: block;
          padding: 15px;
 }
 .header-area .links{
+   position: absolute;
          list-style: none;
          /* padding-left: 20px; */
         /* margin-right: 200px; */
          width: 80%;
          text-align: right;
          font-size: 15px;
-         margin-right: 50px;
+         right: 50px;
         
 }
 .header-area .links li{
