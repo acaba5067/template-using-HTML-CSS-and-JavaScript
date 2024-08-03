@@ -239,6 +239,7 @@ display: block;
 }
 .landing-page .header-area{
    width: 100%;
+   left: 10px;
          position: relative;
          z-index: 2;
          color:#fff;
