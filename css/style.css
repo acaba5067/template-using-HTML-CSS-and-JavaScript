@@ -299,10 +299,15 @@ display: block;
    .header-area .links{
       display: none;
    }
-   .header-area .toggle-menu :hover .header-area .links{
+   .header-area .toggle-menu :hover .header-area .links + li{
       display: flex;
       flex-direction:column ;
-      flex-wrap: wrap;
+      position: absolute;
+      top:100%;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0,0,0,0.7);
+
    }
 }
 .header-area .toggle-menu span{
