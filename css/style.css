@@ -250,11 +250,13 @@ display: block;
          width: 300px;
          padding: 15px;
 }
+.header-area .header-container{
+   width: 100%;
+}
 .header-area .links{
         position: absolute;
         right: 7px;
          list-style: none;
-         width: 80%;
          font-size: 15px;
        
 }
@@ -279,6 +281,35 @@ display: block;
 {
    color:var(--main-color);
    border-bottom: 1px solid var(--main-color);
+
+}
+ .header-area .toggle-menu{
+     background: none;
+     border:none;
+     width: 40px;
+     cursor: pointer;
+     display: none;
+     margin-top: 15px;
+    margin-left: 1000px;
+}
+@media(max-width:768px){
+   .header-area .toggle-menu{
+      display: block;
+   }
+   .header-area .links{
+      display: none;
+   }
+   .header-area .toggle-menu:hover .header-area .links{
+      display: block;
+      display: flex;
+      flex-direction: column;
+   }
+}
+.header-area .toggle-menu span{
+     display: block;
+     background-color: #FFF;
+     height: 4px;
+     margin-bottom: 3px;
 
 }
 .landing-page .introduction-text{
