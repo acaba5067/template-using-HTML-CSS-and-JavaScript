@@ -243,7 +243,7 @@ display: block;
          color:#fff;
          display: flex;
          padding: 10px;
-         margin-right: 80px;
+         /* margin-right: 80px; */
          
 }
 .header-area .log{
