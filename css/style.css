@@ -298,6 +298,7 @@ display: block;
    }
    .header-area .links{
     display: none;
+    transition: 0.3s;
    }
    .header-area .toggle-menu:hover .header-area .links{
       display: block;
