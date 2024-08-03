@@ -243,6 +243,7 @@ display: block;
          color:#fff;
          display: flex;
          padding: 10px;
+         margin-right: 100px;
          
 }
 .header-area .log{
@@ -253,8 +254,8 @@ display: block;
          list-style: none;
          padding-left: 20px;
          padding-right: 5px;
-        margin-right: 150px;
-         width: 100%;
+        margin-right: 200px;
+         width: 80%;
          text-align: right;
          font-size: 15px;
         
