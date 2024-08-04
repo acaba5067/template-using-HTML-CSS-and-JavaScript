@@ -311,7 +311,7 @@ display: block;
     display: none;
    }
     .header-area .links.open {
-   background-color: #FFF;
+   background-color: grey;
    padding: 20px;
    display: block;
    position: absolute;
