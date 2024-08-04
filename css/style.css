@@ -307,13 +307,13 @@ display: block;
       display: inline-block;
       margin-left: 500px;
    }
-   .header-area .links{
+   /* .header-area .links{
     display: none;
-   }
-    .header-area .links.open {
+   } */
+    .header-area .links {
    background-color: #FFF;
    padding: 10px;
-   display: none;
+   /* display: none; */
    position: absolute;
    left:0;
    top:200px;
@@ -322,11 +322,11 @@ display: block;
    z-index: 5;  
    
    }
-   .header-area .links.open  li{
+   .header-area .links li{
     display: block;
     margin: 10px;  
    } 
-   .header-area .links.open li a{
+   .header-area .links li a{
       display: block;
       color:grey;
       font-weight: bold;
