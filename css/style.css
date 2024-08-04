@@ -319,7 +319,8 @@ display: block;
    top:50px;
    width:300px;
    border-radius: 4px;
-   margin-left: -30px;  
+   margin-left: -10px;  
+   z-index: 5;
    
    }
    .header-area .links li{
@@ -330,6 +331,7 @@ display: block;
       display: block;
       color:grey;
       font-weight: bold;
+      text-decoration: none;
 
    } 
    .header-area .toggle-menu:hover .header-area .links .open{
