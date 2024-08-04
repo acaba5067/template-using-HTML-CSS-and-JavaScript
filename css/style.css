@@ -318,7 +318,8 @@ display: block;
    left: 0;
    top:90px;
    width:200px;
-   border-radius: 4px;      
+   border-radius: 4px;  
+   z-index: 5;    
 
    }
    .header-area .links .open li{
@@ -326,6 +327,7 @@ display: block;
     margin: 10px;  
    } 
    .header-area .links .open li a{
+      display: block;
       color:var(--main-color);
       font-weight: bold;
 
