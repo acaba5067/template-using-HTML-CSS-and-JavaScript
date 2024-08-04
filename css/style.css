@@ -303,44 +303,43 @@ display: block;
   left:10px;
 }
 @media(max-width:768px){
-   .header-area{
+   .landing-page .header-area{
       position: relative;
-      z-index: 5;
    }
    .header-area .toggle-menu{
       display: inline-block;
       margin-left: 500px;
+      z-index: 5;
    }
    .header-area .links{
     display: none;
+   
    }
     .header-area .links.open{
    background-color: #FFF;
    display: block;
-   position: absolute;
-   left:7px; 
+   position:absolute;
+   left:0; 
    top:50px;
    padding-bottom: 30px;
    width:200px;
    border-radius: 4px;
   text-align:right;
-  z-index: 3;
    }
    .header-area .links.open li{
     display: block;
     text-align: center; 
     cursor: pointer; 
     margin-top: 10px;
+    cursor: pointer;
    } 
    .header-area .links.open  li a{
       display: block;
       color:grey;
       font-weight: bold;
-      text-decoration: none;
       text-align: center;
       border-bottom: none;
       text-align: center;
-      cursor: pointer;
    } 
 }
 .header-area .toggle-menu span{
@@ -358,7 +357,7 @@ display: block;
          transform: translate(-50%,-50%);
          text-align: center;
          /* background-color: #ffffffbc; */
-         z-index: 2;
+         z-index: 1;
          width:700px;
 }
 .landing-page .introduction-text h1{
@@ -382,6 +381,12 @@ display: block;
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
+}
+@media(max-width:768px){
+   .about-us{
+      display: block;
+      text-align: center;
+   }
 }
 .about-us .info-box{
    flex: 1;
@@ -463,6 +468,7 @@ display: block;
 {
     padding-top: 50px;
     padding-bottom: 50px;
+    text-align: center;
 }
 .gallery h2
 {
