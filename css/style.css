@@ -315,12 +315,11 @@ display: block;
    padding: 10px;
    display: none;
    position: absolute;
-   left:5px;
-   top:100px;
+   left:0;
+   top:200px;
    width:100px;
    border-radius: 4px;  
    z-index: 5;  
-   transition: 1s;  
    
    }
    .header-area .links.open  li{
