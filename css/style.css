@@ -388,7 +388,7 @@ display: block;
       margin: auto;
    }
    .about-us .info-box h2{
-     text-align: center;
+     margin-left: 300px;
    }
 }
 .about-us .info-box{
