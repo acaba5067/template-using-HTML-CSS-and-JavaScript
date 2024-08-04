@@ -310,25 +310,24 @@ display: block;
    .header-area .links{
     display: none;
    }
-    .header-area .links  .open {
+    .header-area .links.open {
    background-color: #FFF;
    padding: 10px;
    display: none;
    position: absolute;
-   left:0;
+   left:5px;
    top:100px;
    width:100px;
    border-radius: 4px;  
    z-index: 5;  
    transition: 1s;  
-   margin-right: 100px;
-
+   
    }
    .header-area .links.open  li{
     display: block;
     margin: 10px;  
    } 
-   .header-area .links .open li a{
+   .header-area .links.open li a{
       display: block;
       color:grey;
       font-weight: bold;
