@@ -321,7 +321,7 @@ display: block;
    border-radius: 4px;  
    z-index: 5;  
    transition: 1s;  
-   text-align: left;
+   margin-right: 100px;
 
    }
    .header-area .links.open  li{
