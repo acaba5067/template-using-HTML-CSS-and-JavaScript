@@ -296,8 +296,8 @@ document.querySelector(".reset-option").onclick=function(){
     //reload window
     window.location.reload();
 
-    
-   
 
 
 }
+
+
