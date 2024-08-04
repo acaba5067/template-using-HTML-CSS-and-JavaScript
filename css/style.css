@@ -305,40 +305,42 @@ display: block;
 @media(max-width:768px){
    .header-area{
       position: relative;
+      z-index: 5;
    }
    .header-area .toggle-menu{
       display: inline-block;
       margin-left: 500px;
    }
-   /* .header-area .links{
+   .header-area .links{
     display: none;
-   } */
-    .header-area .links{
-   background-color: #FFF;
-   padding: 30px;
-   /* display: none; */
-   position: absolute;
-   left:0; 
-   top:30px;
-   width:150px;
-   border-radius: 4px;
-   margin-left:500px;  
-   z-index: 5;
-   
    }
-   .header-area .links li{
-    display: inline;
-    margin: 30px;
-    text-align: center;  
+    .header-area .links.open{
+   background-color: #FFF;
+   display: block;
+   position: absolute;
+   left:7px; 
+   top:50px;
+   padding-bottom: 30px;
+   width:200px;
+   border-radius: 4px;
+  text-align:right;
+  z-index: 3;
+   }
+   .header-area .links.open li{
+    display: block;
+    text-align: center; 
+    cursor: pointer; 
+    margin-top: 10px;
    } 
-   .header-area .links  li a{
-      display: inline;
+   .header-area .links.open  li a{
+      display: block;
       color:grey;
-      padding: 10px;
       font-weight: bold;
       text-decoration: none;
       text-align: center;
-
+      border-bottom: none;
+      text-align: center;
+      cursor: pointer;
    } 
 }
 .header-area .toggle-menu span{

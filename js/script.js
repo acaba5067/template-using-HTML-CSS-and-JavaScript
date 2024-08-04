@@ -302,34 +302,34 @@ document.querySelector(".reset-option").onclick=function(){
 
 
 //Toggle menu
-// let toggleBtn=document.querySelector(".toggle-menu")
-// let links=document.querySelector(".links")
-// toggleBtn.onclick=function(e){
-//     //stop propagation
-//     e.stopPropagation()
-//     //Toggle Class "menu-active" on Button
-//     this.classList.toggle("menu-active")
-//     //Toggle Class "open" on Links
-//     links.classList.toggle("open")
+let toggleBtn=document.querySelector(".toggle-menu")
+let links=document.querySelector(".links")
+toggleBtn.onclick=function(e){
+    //stop propagation
+    e.stopPropagation()
+    //Toggle Class "menu-active" on Button
+    this.classList.toggle("menu-active")
+    //Toggle Class "open" on Links
+    links.classList.toggle("open")
 
-// }
+}
 
-// //click anywhere Outside Menu and toggle button
-// document.addEventListener("click",(e)=>{
-// if(e.target !==toggleBtn  && e.target !== links)
-// {
-//     //check if menu is open
-//     if( links.classList.contains("open")){
-//          //Toggle Class "menu-active" on Button
-//    toggleBtn.classList.toggle("menu-active")
-//     //Toggle Class "open" on Links
-//      links.classList.toggle("open")
+//click anywhere Outside Menu and toggle button
+document.addEventListener("click",(e)=>{
+if(e.target !==toggleBtn  && e.target !== links)
+{
+    //check if menu is open
+    if( links.classList.contains("open")){
+         //Toggle Class "menu-active" on Button
+   toggleBtn.classList.toggle("menu-active")
+    //Toggle Class "open" on Links
+     links.classList.toggle("open")
        
-//     }
+    }
 
-// }
+}
 
-// })
+})
 // stop propagation menu
 links.onclick=function(e){
     e.stopPropagation()
