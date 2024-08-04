@@ -387,6 +387,9 @@ display: block;
       display: block;
       margin: auto;
    }
+   .about-us .info-box h2{
+     text-align: center;
+   }
 }
 .about-us .info-box{
    flex: 1;
