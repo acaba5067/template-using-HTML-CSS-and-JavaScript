@@ -301,3 +301,13 @@ document.querySelector(".reset-option").onclick=function(){
 }
 
 
+//Toggle menu
+let toggleBtn=document.querySelector(".toggle-menu")
+let links=document.querySelector(".links")
+toggleBtn.onclick=function(){
+    //Toggle Class "menu-active" on Button
+    this.classList.toggle("menu-active")
+    //Toggle Class "open" on Links
+    links.classList.toggle("open")
+
+}
