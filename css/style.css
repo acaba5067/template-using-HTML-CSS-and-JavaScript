@@ -307,9 +307,9 @@ display: block;
       display: inline-block;
       margin-left: 500px;
    }
-   /* .header-area .links{
+   .header-area .links{
     display: none;
-   } */
+   }
     .header-area .links.open {
    background-color: #FFF;
    padding: 10px;
@@ -321,6 +321,7 @@ display: block;
    border-radius: 4px;  
    z-index: 5;  
    transition: 1s;  
+   text-align: left;
 
    }
    .header-area .links.open  li{
