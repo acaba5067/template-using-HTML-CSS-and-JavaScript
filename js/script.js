@@ -310,7 +310,7 @@ toggleBtn.onclick=function(e){
     //Toggle Class "menu-active" on Button
     this.classList.toggle("menu-active")
     //Toggle Class "open" on Links
-    links.classList.toggle("open")
+    this.classList.toggle("open")
 
 }
 
