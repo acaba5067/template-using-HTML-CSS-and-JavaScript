@@ -385,7 +385,7 @@ display: block;
 @media(max-width:768px){
    .about-us{
       display: block;
-      text-align: center;
+      margin: auto;
    }
 }
 .about-us .info-box{
