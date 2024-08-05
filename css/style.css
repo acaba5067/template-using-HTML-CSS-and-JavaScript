@@ -487,6 +487,13 @@ display: block;
    text-align: center;
    
 }
+@media(max-width:768px){
+   .gallery .images-box
+   {
+     display: block;
+      
+   } 
+}
 .gallery .images-box img
 {
    width: 200px;
