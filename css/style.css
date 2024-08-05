@@ -902,3 +902,13 @@ display: block;
 
 /* start grid system */
 /* lec31 */
+
+/* start footer */
+.footer{
+   background-color: #333;
+   color:#EEE;
+   padding: 20px;
+   text-align: center;
+   font-size: 30px;
+}
+/* end footer */
